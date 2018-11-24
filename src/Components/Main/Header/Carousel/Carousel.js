@@ -10,7 +10,7 @@ import Vinyl3 from "../../../../assets/Vinyl3.jpg";
 class NpmReactCarousel extends Component {
   render() {
     return (
-      <Carousel showThumbs={false} emulateTouch={true}>
+      <Carousel showThumbs={false} emulateTouch={true} infiniteLoop={true} showStatus={false}>
         <div>
           <img src={Vinyl2} />
         </div>

@@ -4,7 +4,6 @@ import Header from "../src/Components/Main/Header/Header";
 import Section1 from "./Components/Main/Section1/Section1";
 import Footer from "./Components/Main/Footer/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStroopwafel } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faStroopwafel);
@@ -14,8 +13,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Section1 />
-
+         <Section1 />
         <Footer />
       </div>
     );
