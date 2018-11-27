@@ -4,13 +4,14 @@
 
 body {
   margin: auto;
+  height: 900px;
   padding: 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: red;
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 a,
@@ -61,5 +62,5 @@ div .center-align {
 }
 
 .card-linksUl {
-  display: inline;
+  display: inline-flex;
 }

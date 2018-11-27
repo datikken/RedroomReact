@@ -7,16 +7,10 @@ const Section1 = () => {
      <div className="col s12 m6">
        <div className="card black">
          <div className="card-content white-text">
-          <span className="card-title">Мэлмэн - Артист</span>
-          <p>Лежал в дурдоме</p>
+          <span className="card-title">Скоро появится много крутого, а пока:</span>
+          <p>Договориться о записи:</p>
+          <p>8(900)567-97-48</p>
          </div>
-        <div class="card-action">
-        <ul className="card-linksUl">
-          <li><a href="#">Vk</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-       </ul>
-        </div>
       </div>
     </div>
   </div>

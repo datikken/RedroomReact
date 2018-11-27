@@ -11,20 +11,19 @@ const Footer = () => {
     <div className="footer fa">
       <footer className="page-footer">
         <h6 className="red-text">Мы в соц. сетях:</h6>
-       
           <ul className="footer__socialMedia">
             <li className="footer__socialMedia__li">
-              <a href="#">
+              <a href="https://www.instagram.com/tikkentikken" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} inverse />
               </a>
             </li>
             <li className="footer__socialMedia__li">
-              <a href="#">
+              <a href="https://www.facebook.com/tikken.tikken.3" target="_blank">
                 <FontAwesomeIcon icon={faFacebook} inverse />
               </a>
             </li>
             <li className="footer__socialMedia__li">
-              <a href="#">
+              <a href="https://vk.com/datikken" target="_blank">
                 <FontAwesomeIcon icon={faVk} inverse />
               </a>
             </li>

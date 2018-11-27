@@ -5,12 +5,7 @@ const Navbar = () => {
            <div className="navbar-fixed"> 
             <nav>
             <div className="nav-wrapper">
-              <a href="#" className="brand-logo">Red Room</a>
-              <ul id="nav-mobile" className="right hide-on-med-and-down">
-                <li><a href="sass.html">На главную</a></li>
-                <li><a href="badges.html">Работы</a></li>
-                <li><a href="collapsible.html">О нас</a></li>
-              </ul>
+              <a href="#" className="brand-logo center">Red Room</a>
             </div>
           </nav>
           </div>
