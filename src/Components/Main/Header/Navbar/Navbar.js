@@ -1,15 +1,28 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
-        return (
-           <div className="navbar-fixed"> 
-            <nav>
-            <div className="nav-wrapper">
-              <a href="#" className="brand-logo center">Red Room</a>
-            </div>
-          </nav>
-          </div>
-        )
-    }
+  return (
+    <div>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">
+            Red room
+          </a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Цены</a>
+            </li>
+            <li>
+              <a href="#">Оборудование</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
 export default Navbar;

@@ -1,28 +1,23 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import React from 'react';
+import M from 'materialize-css';
+import image1 from '../../../../../src/assets/image.jpg';
+import image2 from '../../../../../src/assets/image2.jpg';
+import image3 from '../../../../../src/assets/image3.jpg';
 
-import Vinyl1 from "../../../../assets/Vinyl1.jpg";
-import Vinyl2 from "../../../../assets/Vinyl2.jpg";
-import Vinyl3 from "../../../../assets/Vinyl3.jpg";
-
-class NpmReactCarousel extends Component {
-  render() {
-    return (
-      <Carousel showThumbs={false} emulateTouch={true} infiniteLoop={true} showStatus={false}>
-        <div>
-          <img src={Vinyl2} />
-        </div>
-        <div>
-          <img src={Vinyl1} />
-        </div>
-        <div>
-          <img src={Vinyl3} />
-        </div>
-      </Carousel>
-    );
-  }
+const Carousel = () => {
+  return (
+    <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src={image1}/></a>
+    <a class="carousel-item" href="#two!"><img src={image2}/></a>
+    <a class="carousel-item" href="#three!"><img src={image3}/></a>
+  </div>
+  )
 }
 
-export default NpmReactCarousel;
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, 3);
+});
+
+
+export default Carousel;
