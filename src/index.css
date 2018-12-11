@@ -36,3 +36,7 @@ a {
 footer {
   background: black!important;
 }
+
+svg {
+  margin: 25px;
+}
