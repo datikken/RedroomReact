@@ -1,23 +1,44 @@
-import React from 'react';
-import M from 'materialize-css';
-import image1 from '../../../../../src/assets/image.jpg';
-import image2 from '../../../../../src/assets/image2.jpg';
-import image3 from '../../../../../src/assets/image3.jpg';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
-const Carousel = () => {
-  return (
-    <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src={image1}/></a>
-    <a class="carousel-item" href="#two!"><img src={image2}/></a>
-    <a class="carousel-item" href="#three!"><img src={image3}/></a>
-  </div>
-  )
+import img1 from "../../../../assets/img1.png";
+import img2 from "../../../../assets/img2.png";
+import img3 from "../../../../assets/img3.png";
+import img4 from "../../../../assets/img4.png";
+import img5 from "../../../../assets/img5.png";
+import img6 from "../../../../assets/img6.png";
+import img7 from "../../../../assets/img7.png";
+
+class DemoCarousel extends Component {
+  render() {
+    return (
+      <Carousel showArrows={true} showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} interval={1250} stopOnHover={true} swipeable={true} centerMode={true}>
+        <div>
+          <img src={img1} />
+        </div>
+        <div>
+          <img src={img2} />
+        </div>
+        <div>
+          <img src={img3} />
+        </div>
+        <div>
+          <img src={img4} />
+        </div>
+        <div>
+          <img src={img5} />
+        </div>
+        <div>
+          <img src={img6} />
+        </div>
+        <div>
+          <img src={img7} />
+        </div>
+      </Carousel>
+    );
+  }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, 3);
-});
-
-
-export default Carousel;
+export default DemoCarousel;
