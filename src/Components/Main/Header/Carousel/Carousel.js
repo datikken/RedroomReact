@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import img1 from "../../../../assets/img1.png";
 import img2 from "../../../../assets/img2.png";
@@ -14,29 +15,29 @@ import img7 from "../../../../assets/img7.png";
 class DemoCarousel extends Component {
   render() {
     return (
-      <Carousel showArrows={true} showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} interval={1250} stopOnHover={true} swipeable={true} centerMode={true}>
-        <div>
-          <img src={img1} />
+      <OwlCarousel className="owl-theme" lazyLoad={true} loop={true} margin={10} items={3}>
+        <div class="item">
+          <img src={img1}/>
         </div>
-        <div>
-          <img src={img2} />
+        <div class="item">
+        <img src={img2}/>
         </div>
-        <div>
-          <img src={img3} />
+        <div class="item">
+        <img src={img3}/>
         </div>
-        <div>
-          <img src={img4} />
+        <div class="item">
+        <img src={img4}/>
         </div>
-        <div>
-          <img src={img5} />
+        <div class="item">
+        <img src={img5}/>
         </div>
-        <div>
-          <img src={img6} />
+        <div class="item">
+        <img src={img6}/>
         </div>
-        <div>
-          <img src={img7} />
+        <div class="item">
+        <img src={img7}/>
         </div>
-      </Carousel>
+      </OwlCarousel>
     );
   }
 }
