@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo center">
-            Red room
+            RED ROOM
           </a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li>
